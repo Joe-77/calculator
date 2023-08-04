@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h4>calc</h4>
+
+        <div class="theme">
+          <span class="se">theme</span>
+          <div>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <div class="toggle" id="toggle">
+              <div id="toggle-icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc">
+        <div class="text">
+          <span id="operation"></span>
+        </div>
+        <div class="buttons">
+          <button class="all-btn" onclick="numbers(7)">7</button>
+          <button class="all-btn" onclick="numbers(8)">8</button>
+          <button class="all-btn" onclick="numbers(9)">9</button>
+          <button onclick="del()" class="del all-btn">del</button>
+          <button class="all-btn" onclick="numbers(4)">4</button>
+          <button class="all-btn" onclick="numbers(5)">5</button>
+          <button class="all-btn" onclick="numbers(6)">6</button>
+          <button class="all-btn" onclick="numbers('+')">+</button>
+          <button class="all-btn" onclick="numbers(1)">1</button>
+          <button class="all-btn" onclick="numbers(2)">2</button>
+          <button class="all-btn" onclick="numbers(3)">3</button>
+          <button class="all-btn" onclick="numbers('-')">-</button>
+          <button class="all-btn" onclick="numbers('.')">.</button>
+          <button class="all-btn" onclick="numbers(0)">0</button>
+          <button class="all-btn" onclick="numbers('/')">/</button>
+          <button class="all-btn" onclick="numbers('*')">*</button>
+          <button onclick="reset()" class="reset all-btn">RESET</button>
+          <button onclick="calc()" id="equal" class="equal">=</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io/" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://web.facebook.com/yousef.abdallah.40" target="_blank"
+        >Yousef Abdallah</a
+      >
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
